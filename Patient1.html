@@ -1,0 +1,118 @@
+<!DOCTYPE html><!--type du document-->
+<html>
+	<!--onglet-->
+	<head>
+	
+	
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="plat.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	
+	
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="style.css">
+ 
+     <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+     <!--[if lt IE 9]>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+     <![endif]-->
+	
+	
+		
+		
+	</head>
+
+	<style>
+    body {
+      background-color:#d8bfd8;
+    }
+	</style>
+
+	<!--corps-->
+	<body>
+	
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-#ff4c68">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-t>
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id=navbarTogglerDemo01">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ordonnance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href"#">Prise de rendez vous</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Choix hopital</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="nav-item"><a href="adminlogin.php" class="nav-link text-white">S'inscrire</a></li>
+                
+	
+	 <form action="" method="GET">
+			<h4>Identification du patient</h4>
+			<br><label for="identifiant"> Identifiant</label>
+			<input type="text" name="id"placeholder="identifiant"></br>
+			<br><input type="submit" value="Go !"/></br>
+			
+      <h6>Infomations du Patient </h6>
+      <br><label for="Nom"> Nom:{{Patient['name']}}</label>
+      <br><label for="Genre"> Genre:{{Patient['gender']}}</label>
+      <br><label for="Date"> Date de naissance:{{Patient['birthDate']}}</label>
+      <br><label for="Adresse"> Adresse:{{Patient['address']}}</label>
+      <h6>Infomations traitement </h6>
+      <br><label for="note"> Note:{{Medication['note']}}</label>
+      <br><label for="Durée"> Durée:{{Medication['dispenseRequest'][0]['initialFill']['duration']}}</label>
+      <br><label for="id"> Identification du médoc:{{Medication['groupIdentifier']}}</label>
+      <br><label for="dosage"> Dosage:{{Medication['dosageInstruction']}}</label>
+
+
+		</>
+	</form>
+	
+	
+	
+	
+
+	
+	
+	
+	
+		<!-- en-tête -->
+		<header>
+			<nav>
+				<a href="/">Page d'accueil </a> 
+        		
+        		
+			</nav>
+		</header>
+		
+	</body>
+</html>

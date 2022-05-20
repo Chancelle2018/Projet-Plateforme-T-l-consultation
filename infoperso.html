@@ -1,0 +1,296 @@
+<!DOCTYPE html><!--type du document-->
+<html>
+	<!--onglet-->
+	<head>
+		<title>{{title}}</title>
+		<meta charset="utf-8">
+		<!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Welcome_Page.css') }}" />-->
+	</head>
+
+	<!--mise en page-->
+	<style>
+    body {
+      background-color:#d8bfd8;
+    }
+    h1 {
+	  font-family: Verdana, Geneva, sans-serif;
+	  font-size: 2.5em;
+	  color: "#008080";
+  	}
+	</style>
+
+
+
+
+<div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Recherchez votre médecin" aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">2+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Centre d'alertes
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">12 Décembre 2021</div>
+                                        <span class="font-weight-bold">Enregistrer vos données</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">7 Décembre 2021</div>
+                                        Un retrait de 50€ a été réalisé
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">2 Décembre 2021</div>
+                                        Vérifier votre boîte mail!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Afficher les messages</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">5</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Centre de messages
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Votre remboursement de 48.56€ a été réalisé par votre mutuel</div>
+                                        <div class="small text-gray-500">MACIF</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Un nouveau document est disponible dans votre compte</div>
+                                        <div class="small text-gray-500">E_Sante_Live Messagerie</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">N'oubliez pas votre rendez-vous du 12.04.2021</div>
+                                        <div class="small text-gray-500">E_Sante_Live Rappel</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Bienvenue dans E_Sante_Live</div>
+                                        <div class="small text-gray-500">E_Sante_LiveTeam</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Lire plus de messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a> 
+                    
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <a class="dropdown-item" href="home.html" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Se déconnecter
+                    </a>
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Vos informations personnelles</h1>
+                        
+                    </div>
+                    <div class="container" style="text-align:center">
+        
+        <h2 style="background-color:aliceblue;border:3px solid black; color:black" ;=""> BONJOUR</h2>
+        </div>
+        <h5 style="background-image:url(thumbnail.png); color:black; background:aliceblue; text-align:center"> Saisissez les informations du patient: </h5>
+        <form action="home1.html" method="post" name="info" style="background:rgba(192, 214, 242, 0.6);text-align:left;">
+            <div class="form-donnee">
+            <h2>Patient</h2>
+            N° Identifiant: <input type="text" name="dossier" placeholder="2478999" required=""><br>
+            <br>
+            Genre: <input type="text" name="genre" placeholder="Insérer M/ MME/ MLLE" required=""><br>
+            <br>
+            Prénom:<input value="Thiago" type="text" name="prenom" placeholder="prenom"> <br>
+            <br>
+            Nom de Famille: <input type="text" name="nom" placeholder="nom de famille" required=""><br>
+            <br>
+            N° de sécurité social: <input type="text" name="secu" placeholder="n° de sécurité sociale" required=""><br>
+            <br>
+            Adresse:<input type="text" name="adresse" placeholder="adresse" required=""><br>
+            <br>
+            Code Postal<input type="text" name="codepostal" placeholder="ex: 75000 Paris" required=""><br>
+            <br>
+            Médecin traitant: <input type="text" name="medecin" placeholder="Médecin Traitant" required=""><br>
+            <br>
+            Personne à contacter en cas d'urgence: <input type="text" name="contact" placeholder="Urgence" required=""><br>
+            <br>
+            Date d'intervention: <input type="text" name="date" placeholder="Date d'intervention" required=""><br>
+            <br>
+            <h2>Immunisation</h2>
+            VaccineCode: <input type="text" name="vaccineCode" placeholder="Code vaccin"><br>
+            <br>
+            Symptome: <input type="text" name="symptome" placeholder="respiratoire,toux,etc."><br>
+            <br>
+            Traitement: <input type="text" name="traitement" placeholder="Traitement"><br>
+            <br>
+            Dosage intrusion: <input type="text" name="dosageIntrustion" placeholder="matin/soir"><br>
+            <br>
+            Durée: <input type="text" name="duration" placeholder="90j"><br>
+            <br>
+            Identifiant du vaccin: <input type="text" name="idvacc" placeholder="82687"><br>
+            <br>
+
+
+            <h2>Médicaments</h2>
+            Identifiant du médicament: <input type="text" name="idmed" placeholder="82687"><br>
+            <br>
+            Référence du médicament: <input type="text" name="medicationReference" placeholder="82687"><br>
+            <br>
+            Sujet: <input type="text" name="subject" placeholder="Patient/ Doctor"><br>
+            <br>
+            Date de prescription: <input type="text" name="authoredOn" placeholder="01-02-2029"><br>
+            <br>
+            Note: <input type="text" name="note" placeholder="..."><br>
+            <br>
+            Durée: <input type="text" name="durationmed" placeholder="45j"><br>
+            <br>
+            <h2>Visualiser les résultats</h2>
+            <h5>Choix du type d'analyses:</h5>
+            <select name="choix" size="1" onclick="this.form.texte.value=this.options[this.selectedIndex].text;">
+                <option>HEMATOLOGIE du 22.08.20
+                </option><option>BIOCHIMIE SANGUINE du 08.10.19
+            </option></select> Choix du traitement: <input type="text" name="texte" placeholder="Choisissez votre analyse" disabled="disabled" required=""><br><br>
+            <br>
+            Choisissez un parmi vos deux analyses: <button type="submit" class="btn btn-primary" style="background-color:#1F5CA9" formaction="page3.html"> Afficher les analyses hématologiques </button>
+            <button type="submit" class="btn btn-primary" formaction="bio.html" style="background-color:#1F5CA9"> Afficher les analyses biochomiques</button>
+            <br>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary" formaction="infoperso.html" style="background-color:#1F5CA9"> Modifier et enregistrer vos données </button><br>
+        
+            </div>
+        </form>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright© E_SanteLive_EPISEN 2021 - Tous droits réservés Réalisation </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+
+
+        </html> 

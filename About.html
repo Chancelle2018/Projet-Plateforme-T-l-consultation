@@ -1,0 +1,94 @@
+<!DOCTYPE html><!--type du document-->
+<html>
+	<!--onglet-->
+	<head>
+		<title>{{title}}</title>
+		<meta charset="utf-8">
+		<!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Welcome_Page.css') }}" />-->
+	</head>
+
+	<!--mise en page-->
+	<style>
+    body {
+      background-color:#d8bfd8;
+    }
+    h1 {
+	  font-family: Verdana, Geneva, sans-serif;
+	  font-size: 2.5em;
+	  color: "#008080";
+  	}
+	</style>
+
+
+
+
+
+   <center><h2>Choisissez votre praticien</h2></center>
+
+    <div class="block-container grid-container grid-x">
+        <a href="/rechercher">
+            <div class="encart-select">
+                <img src="{{url_for('static', filename='Docteur.png')}}" alt="photo"  style="margin-right: 270px;"/> <img src="{{url_for('static', filename='photos.png')}}" alt="photos"   />
+                                                                                                            
+                                                                                                                                                                                      
+                
+                <nav> 
+            		<h2><a href="/RendezvousPatient" style="margin-right: 270px;" > Prendre renderz-vous pour la consultation</a></h2>
+            		
+            		
+                	<div class="large-offset-1 large-4 medium-6 cell text-content">
+                <h3> Kevin Henrry  Medecin Géneraliste </h3>
+                <p>
+                    Diplomé de la Faculté de la Médecine en 2010<br>
+                  
+                    Tel: 0740553011<br>
+                    Addresse: Paris 75ème<br>
+                    Email:  Kevin Henrry@gmail.com<br>
+                     
+                  
+                    
+                </p>
+            </div>
+            		
+            	
+    			</nav>
+           
+           
+           
+             <nav> 
+         			<div align="right"><h2><a href="/Medecin" style="margin-right: 270px;" > Gerer mes rendez-vous</a></h2>
+         		
+         		
+         		
+
+             
+             <h3> Maelle KETTE Pediatre </h3>
+             <p>
+                 Diplomé de la Faculté de la Médecine en 2005<br>
+               
+                 Tel: 06457773<br>
+                 Addresse: Brunoy<br>
+                 Email:  maellekette@gmail.com<br></center>
+                  
+               
+                 
+             </p>
+         </div>
+         		
+         	
+ 			</nav>
+           
+           
+                
+
+           
+            
+            
+            
+        </div>
+        </a>
+        
+        
+        
+            </div> 
+</html> 

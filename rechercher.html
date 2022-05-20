@@ -1,0 +1,75 @@
+<!DOCTYPE html><!--type du document-->
+<html>
+	<!--onglet-->
+	<head>
+		<title>{{title}}</title>
+		<meta charset="utf-8">
+		<!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Welcome_Page.css') }}" />-->
+	</head>
+
+	<!--mise en page-->
+	<style>
+    body {
+      background-color:#d8bfd8;
+    }
+    h1 {
+	  font-family: Verdana, Geneva, sans-serif;
+	  font-size: 2.5em;
+	  color: "#008080";
+  	}
+	</style>
+
+	
+
+
+
+
+
+<div class="search-bg">
+    <!-- <div class="cell"> -->
+      <!-- <h3>Rechercher un praticien</h3> -->
+      <form method="POST" action="/rechercher" role="form" class="homepage-form search-form" id="rechercher-praticiens-form">
+  <div class="grid-x grid-container ">
+      <div class="cell large-5" style="margin-right: 10px;">
+        <label>
+          <span>Rechercher un praticien</span>
+        <div class="awesomplete"><input class="form-item" data-autofirst="" data-minchars="2" id="qui" name="qui" placeholder="Médecine Générale, Gynécologie, Dr Michel DUPONT..." title="Rechercher un médecin par son nom ou sa spécialité" type="text" value="" autocomplete="off" aria-owns="awesomplete_list_1" role="combobox"><ul hidden="" role="listbox" id="awesomplete_list_1"></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-atomic="true">Type 2 or more characters for results.</span></div>
+        </label>
+      </div>
+
+      <div class="cell large-5">
+          <label>
+            <span>Localisation</span>
+            <div class="awesomplete"><input class="form-item" id="ou" name="ou" placeholder="Paris, 72500, Bordeaux..." type="text" value="" autocomplete="off" aria-owns="awesomplete_list_2" role="combobox"><ul hidden="" role="listbox" id="awesomplete_list_2"></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-atomic="true">Type 2 or more characters for results.</span></div>
+        </label>
+      </div>
+
+      <div>
+        <input type="submit" class="button submit-btn full-basic" value="Rechercher">
+      </div>
+
+  </div>
+</form>
+
+
+
+
+
+        <!-- <form action="">
+          <input class="full-input" type="text" placeholder="Spécialité, ville, nom...">
+          <i class="material-icons md-48">search</i>
+        </form> -->
+
+    </div>
+
+
+    <!--corps-->
+
+
+
+
+
+	<body>
+        <h2>Vous avez déjà un compte ?</h2>
+	</body>
+</html> 
